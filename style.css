@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(73, 73, 73);
+    outline: 0;
+    text-decoration: none;
+}
+#wrapper {
+    min-height: 100vh;
+    min-width: 960px;
+    margin: 0 auto;
+}
+nav {
+    padding: 0.5rem 1rem;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto auto auto;
+}
+nav ul li a{
+    padding: 2px;
+    font-size: 0.8rem;
+}
+nav ul li a:focus, nav ul li a:hover{
+    text-decoration: underline;
+}
+#signIn {
+    text-decoration: none;
+}
+nav ul li{
+    padding: 0.5rem 0.5rem;
+    display: inline-block;
+}
+#app-icon {
+    color: rgb(123, 123, 123);
+    display: inline;
+    padding: 5px;
+}
+#signIn {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.8rem;
+    background-color: rgb(85, 136, 253);
+    color: white;
+    font-weight: 700;
+    border: 0;
+    border-radius: 3px;
+}
+/******************************************************************/
+#logo-box {
+    margin: auto auto;
+    margin-top: 100px;
+    width: 480px;
+    text-align: center;
+}
+#search {
+    margin-top: 1.5rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    height: 3rem;
+}
+#search:hover, #search:focus-within {
+    box-shadow: 0px 1px 5px rgb(164, 164, 164);
+}
+#search-icon {
+    border: 0;
+    font-size: 1rem;
+    margin: 0 7px 0 15px;
+    align-self: center;
+    color: rgb(166, 166, 166);   
+}
+#mic-icon {
+    align-self: center;
+    margin: 0 19px 0 7px;
+    font-size: 1.3rem;
+}
+#mic {
+    color: rgb(9, 83, 186);
+}
+#input-text {
+    padding: 0;
+    border: 0;
+    color: rgba(0, 0, 0, 0.856);
+    margin: 3px;
+    margin-right: 1rem;
+    font-size: 1rem;
+    letter-spacing: -0.05rem; 
+}
+#button {
+    margin: 0.2rem;
+    display: inline-block;
+    margin-top: 1.7rem;
+    padding: 0 0.9rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    line-height: 2.1rem;
+    background-color: #e8e8e8;
+    border: 1px solid #ffffff;
+}
+#button:hover, #button:focus {
+    border: 1px solid #bababa;  
+}
+/********************************************************/
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 960px;
+    padding: 0;
+    background-color: #e8e8e8;
+}
+#footer ul{
+    margin: 0.1rem 1rem;    
+}
+#footer ul li {
+    margin: 0 0.4rem;
+}
