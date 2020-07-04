@@ -1,3 +1,7 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 * {
@@ -21,7 +25,9 @@ nav {
     padding: 0.5rem 1rem;
 }
 nav ul{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto auto 1fr auto auto auto auto;
     grid-template-columns: auto auto 1fr auto auto auto auto;
 }
 nav ul li a{
@@ -63,22 +69,29 @@ nav ul li{
     margin-top: 1.5rem;
     border: 1px solid #d1d1d1;
     border-radius: 1.5rem;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto 1fr auto;
     grid-template-columns: auto 1fr auto;
     height: 3rem;
 }
 #search:hover, #search:focus-within {
-    box-shadow: 0px 1px 5px rgb(164, 164, 164);
+    -webkit-box-shadow: 0px 1px 5px rgb(164, 164, 164);
+            box-shadow: 0px 1px 5px rgb(164, 164, 164);
 }
 #search-icon {
     border: 0;
     font-size: 1rem;
     margin: 0 7px 0 15px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     color: rgb(166, 166, 166);   
 }
 #mic-icon {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin: 0 19px 0 7px;
     font-size: 1.3rem;
 }
